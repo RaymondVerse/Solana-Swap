@@ -1,0 +1,14 @@
+[features]
+seeds = false
+[programs.devnet]
+nft_minting_dapp = "2ffVV9CD17CoJvFW2J9QVRMZQnRterYhLLZVioiMWzYS"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/berzan/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
